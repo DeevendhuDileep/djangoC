@@ -16,3 +16,6 @@ def add_num(request):
     n2=int(request.GET['num2'])
     sum = n1+n2
     return render(request,'result.html',{'result':sum})
+
+def load_third(request):
+    return render(request,'third.html')
