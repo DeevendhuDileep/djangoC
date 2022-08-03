@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum</title>
+    <!-- Bootstrap and CSS..... -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container bg-light">
+        <h1 style="text-align: center;">ADD TWO NUMBERS......</h1>
+        <form action="{% url 'add_num' %}">
+            <div class="form">
+                <label>
+                    First number:
+                </label>
+                <input type="number" name="num1" class="form-control">
+                <label>
+                    Second number:
+                </label>
+                <input type="number" name="num2" class="form-control"><br>
+                <button class="btn btn-outline-info text-dark" type="submit">Submit</button>
+            <br>
+            <label>Result.......</label>
+            
+            </div>
+        </form>    
+    </div>
+</body>
+</html>
